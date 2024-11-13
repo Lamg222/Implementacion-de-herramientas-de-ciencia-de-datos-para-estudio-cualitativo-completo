@@ -40,7 +40,7 @@ Mientras que, los estados de conciencia no ordinarios, se definen como la condic
 
 ### Instrumento recopilador de información
 
-La creación de un cuestionario que forma parte de una investigación llevada a cabo en colaboración entre la Universidad Camilo José Cela, Inawe (el Observatorio Español de Terapia Asistida con Psicodélicos) y el European Institute of Consciousness Research.
+La creación de un cuestionario que forma parte de una investigación llevada a cabo en colaboración entre la *Universidad Camilo José Cela*, *Inawe (el Observatorio Español de Terapia Asistida con Psicodélicos)* y el *European Institute of Consciousness Research*.
 Dicho cuestionario, a la fecha 13/octubre/2024, brinda la apertura a una investigación internacional de carácter técnico especializado, que evalua 233 variables/preguntas a un total de 117 instancias anónimas.
 
 Puedes leer más sobre el proyecto en este enlace:  https://eiocr.com/phenomenology-study.html 
