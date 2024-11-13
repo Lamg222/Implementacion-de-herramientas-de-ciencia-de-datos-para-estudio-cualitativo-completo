@@ -40,7 +40,7 @@ Mientras que, los estados de conciencia no ordinarios, se definen como la condic
 
 ### Instrumento recopilador de información
 
-La creación de un cuestionario que forma parte de una investigación llevada a cabo en colaboración entre la *Universidad Camilo José Cela*, *Inawe (el Observatorio Español de Terapia Asistida con Psicodélicos)* y el *European Institute of Consciousness Research*.
+La creación de un cuestionario que forma parte de una investigación llevada a cabo en colaboración entre la **Universidad Camilo José Cela**, **Inawe (el Observatorio Español de Terapia Asistida con Psicodélicos)** y el **European Institute of Consciousness Research**.
 Dicho cuestionario, a la fecha 13/octubre/2024, brinda la apertura a una investigación internacional de carácter técnico especializado, que evalua 233 variables/preguntas a un total de 117 instancias anónimas.
 
 Puedes leer más sobre el proyecto en este enlace:  https://eiocr.com/phenomenology-study.html 
@@ -60,7 +60,7 @@ Hipótesis nula (Ho): Las dos variables son independientes, lo que significa que
 
 Hipótesis alternativa (Ha): Las dos variables no son independientes, es decir, existe una relación entre ellas.
 
-*Chi-cuadrada*
+**Chi-cuadrada**
 
 Los supuestos que deben cumplirse para que el valor de este estadístico sea estadísticamente confiable en el estudio de independencia entre variables son:
 
@@ -82,7 +82,7 @@ _Chi-cuadrada_
 5. Experiencia fenomenológica vinculada con la muerte.
 6. Prácticas de respiración previas a la experiencia fenomenológica.
 
-*Prueba exacta de Fisher*
+**Prueba exacta de Fisher**
 
 Hipótesis nula (Ho): Las variables son independientes por lo que una variable no cambia entre los distintos niveles de la otra variable.
 
@@ -106,17 +106,17 @@ _Variables de la Prueba exacta de Fisher:_
 
 ## Algoritmo
 
-*Hiperparámetros*
+**Hiperparámetros**
 
 El hiperparámetro “C”, se define como el inverso de la fuerza de regularización y previene el sobreajuste.
 El hiperparámetro “penalty”, especifica el tipo de penalización entre la norma L1 y L2, que representan la regularización Lasso (Least Absolute Shrinkage and Selection Operator) y Ridge, respectivamente.
 Por último, para el hiperparámetro “solver”, este permite especificar el algoritmo que se utilizará para encontrar los valores de los coeficientes estimados beta, de cada una de las variables independientes del modelo. Estos algoritmos asignan los valores de los coeficientes minimizando el error entre el valor estimado y el valor observado
 
-*Coeficientes estimados beta*
+**Coeficientes estimados beta**
 Dado el conjunto de hiperparámetros para este modelo, obtenemos que los coeficientes convergen a cero, debido a la penalización Ridge o norma L2, lo que reafirma que la combinación del conjunto de las 12 variables independientes es poco representativa y es necesario buscar otra combinación o conjunto de variables que tengan una mayor representatividad en sus coeficientes estimados, para la explicación de la variabilidad de la variable dependiente “Consideras que tu sensación de dicha o felicidad se debe a tu experiencia psicodélica”.
 
 
-*Métricas de evaluación para el modelo de clasificación*
+**Métricas de evaluación para el modelo de clasificación**
 
 _Precision_
 Para esta métrica, el modelo ha obtenido un valor del 100%, respecto a las instancias que vinculan su sensación de dicha o alegría a su experiencia fenomenológica (clase 1). Esto indica que del total de instancias que el modelo clasificó de esta manera no hay instancias de la clase que considera que su percepción de dicha no se relaciona con la experiencia fenomenológica vivida (clase 0) que se hayan estimado como clase 1. Sin embargo, el resultado es de 0.77 para la clase 0, es decir que hay instancias de clase 1 clasificadas como clase 0.
