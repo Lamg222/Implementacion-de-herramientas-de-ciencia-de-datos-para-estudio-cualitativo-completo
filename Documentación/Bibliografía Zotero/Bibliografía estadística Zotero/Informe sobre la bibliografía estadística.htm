@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="script-src 'none'; media-src 'none'">
+		<title>Informe de Zotero</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9CgpkaXYgdGFibGUgewoJYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKZGl2IHRhYmxlIHRkLCBkaXYgdGFibGUgdGggewoJYm9yZGVyOiAxcHggI2NjYyBzb2xpZDsKCWJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cgl3b3JkLWJyZWFrOiBicmVhay1hbGw7Cn0KCmRpdiB0YWJsZSB0ZCBwOmVtcHR5OjphZnRlciwgZGl2IHRhYmxlIHRoIHA6ZW1wdHk6OmFmdGVyIHsKCWNvbnRlbnQ6ICJcMDBhMCI7Cn0KCmRpdiB0YWJsZSB0ZCAqOmZpcnN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpmaXJzdC1jaGlsZCB7CgltYXJnaW4tdG9wOiAwOwp9CgpkaXYgdGFibGUgdGQgKjpsYXN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpsYXN0LWNoaWxkIHsKCW1hcmdpbi1ib3R0b206IDA7Cn0K">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_ED7YB4ED" class="item journalArticle">
+			<h2>Del juicio clínico al modelo de regresión lineal</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Lino Palacios-Cruz</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Marcela Pérez</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Rodolfo Rivas-Ruiz</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Juan O Talavera</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2013</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>Rev Med Inst Mex Seguro Soc.</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>21/2/2024 19:50:10</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>21/2/2024 20:34:32</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_TM5PY5U8">Palacios-Cruz et al. - Del juicio clínico al modelo de regresión lineal.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_749LAC6K" class="item webpage">
+			<h2>Distribución chi-cuadrado DefinicionesyPropiedades</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Página web</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>hmong.wiki</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>En teoría de la probabilidad y estadísticas , la distribución 
+de chi-cuadrado (también chi-cuadrado o χ 2 distribución t ) con k 
+grados de libertad es la distribución de una suma de los cuadrados de k 
+independientes normales estándar variables aleatorias. La distribución 
+chi-cuadrado es un caso especial de la distribución gamma y es una de 
+las distribuciones de probabilidad más utilizadas en la estadística 
+inferencial , especialmente en la prueba de hipótesis y en la 
+construcción de intervalos de confianza .[2] [3] [4] [5] Esta 
+distribución a veces se denomina distribución de chi-cuadrado central , 
+un caso especial de la distribución de chi-cuadrado no central más 
+general.</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>th</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://hmong.es/wiki/Chi_square_distribution">https://hmong.es/wiki/Chi_square_distribution</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>3/7/2024 16:42:07</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>3/7/2024 16:42:07</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>3/7/2024 16:42:07</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_JSUJ24QV">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_TAHV5M5L" class="item journalArticle">
+			<h2>Época antigua. Historia de la estadística mundial. Núm 1.</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>INEGI</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2011</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>60</td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>21/2/2024 19:49:47</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>21/2/2024 20:31:03</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_C4V95YBA">Época antigua. Historia de la estadística mundial..pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_XDA9FSJ8" class="item journalArticle">
+			<h2>Estadística para negocios y economía</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Anderson</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Sweeney</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Williams</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>Estadística para negocios y economía</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2012</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>www.academia.edu</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.academia.edu/22160782/Estad%C3%ADstica_para_negocios_y_econom%C3%ADa">https://www.academia.edu/22160782/Estad%C3%ADstica_para_negocios_y_econom%C3%ADa</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>9/7/2024 12:59:58</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>1080</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>9/7/2024 12:59:58</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>10/7/2024 11:22:47</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_7HT8XHHF">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_F4RGTL76" class="item webpage">
+			<h2>Fundamentos de Estad�stica Inferencial</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Página web</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Mtro J. Antonio Dom�nguez H. Mtra. Josefina B�rcenas L.</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>Conceptos b�sicos para introducir al estudiante a la aplicaci�n de la Estad�stica Inferencial.</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://www.telematica.ccadet.unam.mx/recursos/objetosdeaprendizaje/Objetosv2/papime_e/definiciones/b/ventana001.html">http://www.telematica.ccadet.unam.mx/recursos/objetosdeaprendizaje/Objetosv2/papime_e/definiciones/b/ventana001.html</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>28/6/2024 15:06:58</td>
+					</tr>
+					<tr>
+					<th>Tipo de página Web</th>
+						<td>http://purl.org/dc/dcmitype/Image</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>28/6/2024 15:06:58</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>28/6/2024 15:06:58</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_39EZCYWJ">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_SERWS6FK" class="item webpage">
+			<h2>IBM Cognos Analytics</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Página web</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>Cramér’s V is an effect size measurement for the chi-square 
+test of independence. It measures how strongly two categorical fields 
+are associated.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2024-01-18</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es-ES</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.ibm.com/docs/es/cognos-analytics/12.0.0?topic=terms-cramrs-v">https://www.ibm.com/docs/es/cognos-analytics/12.0.0?topic=terms-cramrs-v</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>8/7/2024 15:55:25</td>
+					</tr>
+					<tr>
+					<th>Derechos</th>
+						<td>© Copyright IBM Corporation 2024</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>8/7/2024 15:55:25</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>8/7/2024 15:55:56</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_KWTUK2PX">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_M2PIYZ5E" class="item journalArticle">
+			<h2>Introducción a la Estadística Bayesiana</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Dailos Castellano Marrero</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>The objective of this dissertation is to explain, step by step
+ and in detail, several techniques used to estimate statistics and to 
+perform statistical hypothesis testing of proportions and means. To that
+ end, techniques of Bayesian statistics will be used so we will first 
+explain the main characteristics for this trend and its possible strong 
+points. After this, we will explain several situations that require a 
+Bayesian analysis in order to estimate some statistics or compare some 
+hypothesis. Numerical examples will always be used in order to provide 
+an easy comprehension of the explanations which will prove the 
+suitability of Bayesian statistics for some particular cases.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2015</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>21/2/2024 20:12:41</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>21/2/2024 20:32:39</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_UDS9IXKT">Marrero - Introducción a la Estadística Bayesiana.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_ZLMLBV8F" class="item webpage">
+			<h2>La prueba de ji-cuadrado</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Página web</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>Estadística aplicada a la investigación en salud - Publicado 
+el  1 de diciembre de 2011 | http://doi.org/10.5867/medwave.2011.12.5266</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2011-12-01</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.medwave.cl/series/MBE04/5266.html">https://www.medwave.cl/series/MBE04/5266.html</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>28/6/2024 15:06:36</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>28/6/2024 15:06:36</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>28/6/2024 15:06:36</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_7RBRWZQS">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_MNEBBVG8" class="item webpage">
+			<h2>SPSS Statistics Subscription - Classic</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Página web</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>IBM Documentation.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2023-08-04</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es-ES</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.ibm.com/docs/es/spss-statistics/saas?topic=tests-chi-square-test">https://www.ibm.com/docs/es/spss-statistics/saas?topic=tests-chi-square-test</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>28/6/2024 15:06:14</td>
+					</tr>
+					<tr>
+					<th>Derechos</th>
+						<td>© Copyright IBM Corporation 2023</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>28/6/2024 15:06:14</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>28/6/2024 15:06:14</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_YWKGNQ4F">Snapshot					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>

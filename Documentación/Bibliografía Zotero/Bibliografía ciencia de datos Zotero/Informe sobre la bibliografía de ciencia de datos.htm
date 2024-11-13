@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="script-src 'none'; media-src 'none'">
+		<title>Informe de Zotero</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9CgpkaXYgdGFibGUgewoJYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKZGl2IHRhYmxlIHRkLCBkaXYgdGFibGUgdGggewoJYm9yZGVyOiAxcHggI2NjYyBzb2xpZDsKCWJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cgl3b3JkLWJyZWFrOiBicmVhay1hbGw7Cn0KCmRpdiB0YWJsZSB0ZCBwOmVtcHR5OjphZnRlciwgZGl2IHRhYmxlIHRoIHA6ZW1wdHk6OmFmdGVyIHsKCWNvbnRlbnQ6ICJcMDBhMCI7Cn0KCmRpdiB0YWJsZSB0ZCAqOmZpcnN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpmaXJzdC1jaGlsZCB7CgltYXJnaW4tdG9wOiAwOwp9CgpkaXYgdGFibGUgdGQgKjpsYXN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpsYXN0LWNoaWxkIHsKCW1hcmdpbi1ib3R0b206IDA7Cn0K">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_4VUZ6FTQ" class="item webpage">
+			<h2>Artificial Intelligence and Machine Learning Approaches to 
+Facilitate Therapeutic Drug Management and Model-Informed Precision 
+Dosing</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Página web</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ethan A. Poweleit</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Alexander A. Vinks</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Tomoyuki Mizuno</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>April 2023</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.ingentaconnect.com/content/wk/tdm/2023/00000045/00000002/art00005">https://www.ingentaconnect.com/content/wk/tdm/2023/00000045/00000002/art00005</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>23/2/2024 10:26:46</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>Publisher: Wolters Kluwer
+DOI: 10.1097/FTD.0000000000001078</td>
+					</tr>
+					<tr>
+					<th>Tipo de página Web</th>
+						<td>Text</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>23/2/2024 10:26:46</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>23/2/2024 10:26:46</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_5MP4KC2J">Snapshot					</li>
+					<li id="item_6SR9ACPE">Versión aceptada					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_A2IZQGZJ" class="item journalArticle">
+			<h2>Artificial Intelligence in Pharmaceutical Technology and Drug Delivery Design</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Lalitkumar K. Vora</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Amol D. Gholap</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Keshava Jetha</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Raghu Raj Singh Thakur</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Hetvi K. Solanki</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Vivek P. Chavda</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>Artificial intelligence (AI) has emerged as a powerful tool 
+that harnesses anthropomorphic knowledge and provides expedited 
+solutions to complex challenges. Remarkable advancements in AI 
+technology and machine learning present a transformative opportunity in 
+the drug discovery, formulation, and testing of pharmaceutical dosage 
+forms. By utilizing AI algorithms that analyze extensive biological 
+data, including genomics and proteomics, researchers can identify 
+disease-associated targets and predict their interactions with potential
+ drug candidates. This enables a more efficient and targeted approach to
+ drug discovery, thereby increasing the likelihood of successful drug 
+approvals. Furthermore, AI can contribute to reducing development costs 
+by optimizing research and development processes. Machine learning 
+algorithms assist in experimental design and can predict the 
+pharmacokinetics and toxicity of drug candidates. This capability 
+enables the prioritization and optimization of lead compounds, reducing 
+the need for extensive and costly animal testing. Personalized medicine 
+approaches can be facilitated through AI algorithms that analyze 
+real-world patient data, leading to more effective treatment outcomes 
+and improved patient adherence. This comprehensive review explores the 
+wide-ranging applications of AI in drug discovery, drug delivery dosage 
+form designs, process optimization, testing, and 
+pharmacokinetics/pharmacodynamics (PK/PD) studies. This review provides 
+an overview of various AI-based approaches utilized in pharmaceutical 
+technology, highlighting their benefits and drawbacks. Nevertheless, the
+ continued investment in and exploration of AI in the pharmaceutical 
+industry offer exciting prospects for enhancing drug development 
+processes and patient care.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2023/7</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>www.mdpi.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.mdpi.com/1999-4923/15/7/1916">https://www.mdpi.com/1999-4923/15/7/1916</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>23/2/2024 9:58:09</td>
+					</tr>
+					<tr>
+					<th>Derechos</th>
+						<td>http://creativecommons.org/licenses/by/3.0/</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>Number: 7
+Publisher: Multidisciplinary Digital Publishing Institute</td>
+					</tr>
+					<tr>
+					<th>Volumen</th>
+						<td>15</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>1916</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>Pharmaceutics</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.3390/pharmaceutics15071916">10.3390/pharmaceutics15071916</a></td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>7</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1999-4923</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>23/2/2024 9:58:09</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>23/2/2024 9:58:09</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Etiquetas:</h3>
+				<ul class="tags">
+					<li>artificial intelligence (AI)</li>
+					<li>dosage form testing</li>
+					<li>drug discovery</li>
+					<li>formulation</li>
+					<li>machine learning</li>
+					<li>PBPK</li>
+					<li>pharmacodynamics</li>
+					<li>pharmacokinetics</li>
+					<li>QSAR</li>
+				</ul>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_HVA4R7UQ">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_PV36JJZK" class="item webpage">
+			<h2>Big Data y marketing digital: una relación imprescindible</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Página web</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Daniel Gil-Solés</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>In this lengthy article I will try to relate the Big Data to 
+different aspects of digital marketing, and how both are directed, if 
+they have not already, toward an essential and absolutely necessary 
+relationship. And is that Big Data offers digital marketing a series of 
+tools and methodologies that improve it and bring it closer to end 
+users, thus becoming great allies. First of all, I will give you a brief
+ overview of Big Data: I will explain its origins and background, its 
+definition, and its explosion. Later I will analyze in which aspects the
+ Big Data can help the digital marketing finally, to establish some 
+conclusions.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2014-09-17</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>Título corto</th>
+						<td>Big Data y marketing digital</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://eprints.rclis.org/31908/">http://eprints.rclis.org/31908/</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>21/2/2024 21:46:43</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>Publisher: IMO, Instituto de Marketing Online</td>
+					</tr>
+					<tr>
+					<th>Tipo de página Web</th>
+						<td>Journal article (Unpaginated)</td>
+					</tr>
+					<tr>
+					<th>Título de página web</th>
+						<td>IMO, Instituto de Marketing Online</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>21/2/2024 21:46:43</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>21/2/2024 21:46:43</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_VVFCCGHE">Full Text PDF					</li>
+					<li id="item_IJCUXMBA">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_GH5W5NPT" class="item journalArticle">
+			<h2>Big data, smart cities and city planning</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Michael Batty</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>o
+Defino big data con respecto a su tamaño, pero presto especial atención 
+al hecho de que los datos a los que me refiero son datos urbanos, es 
+decir, datos de ciudades que invariablemente están etiquetados en el 
+espacio y el tiempo. Sostengo que este tipo de datos se transmiten en 
+gran medida desde los sensores, y esto representa un cambio radical en 
+los tipos de datos que tenemos sobre lo que sucede, dónde y cuándo en 
+las ciudades. Describo cómo el crecimiento del big data está cambiando 
+el énfasis de la planificación estratégica a largo plazo al pensamiento a
+ corto plazo sobre cómo funcionan las ciudades y cómo se pueden 
+gestionar, aunque con la posibilidad de que durante períodos de tiempo 
+mucho más largos, este tipo de big data se convierta en una fuente de 
+información sobre todos los horizontes temporales. A modo de conclusión,
+ ilustro la necesidad de una nueva teoría y análisis con respecto a los 
+datos de 6 meses de tarjetas de viaje inteligentes de viajes 
+individuales en los sistemas de transporte público del Gran Londres.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2013-11-01</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>SAGE Journals</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://doi.org/10.1177/2043820613513390">https://doi.org/10.1177/2043820613513390</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>22/2/2024 13:37:20</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>Publisher: SAGE Publications</td>
+					</tr>
+					<tr>
+					<th>Volumen</th>
+						<td>3</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>274-279</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>Dialogues in Human Geography</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1177/2043820613513390">10.1177/2043820613513390</a></td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>3</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2043-8206</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>22/2/2024 13:37:20</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>22/2/2024 13:37:20</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_6IQ3GWGI">SAGE PDF Full Text					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_IVDEPAG2" class="item journalArticle">
+			<h2>Caracterización geográfica de la vivienda en México: un enfoque de Ciencia de Datos</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Jacobo Gerardo González León</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Miguel Félix Mata Rivera</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>A global trend in the first years of the 21st century has been
+ the generation of platforms and open data by government entities for 
+public consultation. These data allow citizens to generate new 
+techniques and mechanisms for their analysis with the intention of 
+achieving improvements in the political, social and economic system of a
+ country. In this research, we propose a Data Science methodology 
+focused on the geographical characterization of Mexican houses, using 
+open data from the period 2014-2017 and applying unsupervised automated 
+learning techniques. The application of this methodology allowed 
+discovering, that there are seven types of houses in Mexico; all of them
+ are distributed throughout the Mexican territory. The results are 
+displayed on maps that will be very useful in applied science, for the 
+study of human and geographical phenomena in different domains of 
+knowledge, such as security, transport, health, economy, industry, 
+agriculture, among others.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://pdfs.semanticscholar.org/09f8/00b1da97608fc5452fc6524191066f368a49.pdf">https://pdfs.semanticscholar.org/09f8/00b1da97608fc5452fc6524191066f368a49.pdf</a></td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/https://doi.org/10.35424/rcarto.i97.222">https://doi.org/10.35424/rcarto.i97.222</a></td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>21/2/2024 21:42:05</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>21/2/2024 21:43:32</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_6UPU3DMD">León y Rivera - Caracterización geográfica de la vivienda en Méxic.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_VXIHPFXP" class="item journalArticle">
+			<h2>Clasificación: árboles de decisión</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ramon Sangüesa</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>21/2/2024 20:18:06</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>21/2/2024 20:37:33</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_BX5AGSD9">Clasificación árboles de decisión.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_NELRK6BB" class="item book">
+			<h2>Competing on Analytics, Updated, with a New Introduction: The New Science of Winning</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Libro</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Thomas H. Davenport</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Jeanne G. Harris</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>The New Edition of a Business Classic. This landmark work, the
+ first to introduce business leaders to analytics, reveals how analytics
+ are rewriting the rules of competition. Updated with fresh content, 
+"Competing on Analytics" provides the road map for becoming an 
+analytical competitor, showing readers how to create new strategies for 
+their organizations based on sophisticated analytics. Introducing a 
+five-stage model of analytical competition, Davenport and Harris 
+describe the typical behaviors, capabilities, and challenges of each 
+stage. They explain how to assess your company's capabilities and guide 
+it toward the highest level of competition. With equal emphasis on two 
+key resources, human and technological, this book reveals how even the 
+most highly analytical companies can up their game. With an emphasis on 
+predictive, prescriptive, and autonomous analytics for marketing, supply
+ chain, finance, M&amp;A, operations, R&amp;D, and HR, the book contains
+ numerous new examples from different industries and business functions,
+ such as Disney's vacation experience, Google's HR, UPS's logistics, the
+ Chicago Cubs' training methods, and Firewire Surfboards' customization.
+ Additional new topics and research include: Data scientists and what 
+they do; Big data and the changes it has wrought; Hadoop and other 
+open-source software for managing and analyzing data; Data products--new
+ products and services based on data and analytics; Machine learning and
+ other AI technologies; The Internet of Things and its implications; New
+ computing architectures, including cloud computing; Embedding analytics
+ within operational systems; Visual analytics. The business classic that
+ turned a generation of leaders into analytical competitors, "Competing 
+on Analytics" is the definitive guide for transforming your company's 
+fortunes in the age of analytics and big data.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://books.google.com.mx/books?id=LW9GDgAAQBAJ&amp;printsec=frontcover&amp;hl=es&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false">https://books.google.com.mx/books?id=LW9GDgAAQBAJ&amp;printsec=frontcover&amp;hl=es&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false</a></td>
+					</tr>
+					<tr>
+					<th>Editorial</th>
+						<td>Harvard Business Press</td>
+					</tr>
+					<tr>
+					<th>Número de páginas</th>
+						<td>320</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>22/2/2024 12:30:58</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>22/2/2024 12:36:20</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_HXSNKHT4" class="item journalArticle">
+			<h2>Computational Social Science</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>David Lazer</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Alex Pentland</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Lada Adamic</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Sinan Aral</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Albert-László Barabási</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Devon Brewer</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Nicholas Christakis</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Noshir Contractor</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>James Fowler</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Myron Gutmann</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Tony Jebara</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Gary King</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Michael Macy</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Deb Roy</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Marshall Van Alstyne</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2009-02-06</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.science.org/doi/10.1126/science.1167742">https://www.science.org/doi/10.1126/science.1167742</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>20/2/2024 15:25:58</td>
+					</tr>
+					<tr>
+					<th>Volumen</th>
+						<td>323</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>721-723</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>Science</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1126/science.1167742">10.1126/science.1167742</a></td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>5915</td>
+					</tr>
+					<tr>
+					<th>Abrev. de revista</th>
+						<td>Science</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>0036-8075, 1095-9203</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>20/2/2024 15:25:58</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>20/2/2024 15:25:58</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_7P2V8V69">Lazer et al. - 2009 - Computational Social Science.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_W5HEV6ZI" class="item preprint">
+			<h2>Data Programming: Creating Large Training Sets, Quickly</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Preimpresión</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Alexander Ratner</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Christopher De Sa</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Sen Wu</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Daniel Selsam</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Christopher Ré</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>Large labeled training sets are the critical building blocks 
+of supervised learning methods and are key enablers of deep learning 
+techniques. For some applications, creating labeled training sets is the
+ most time-consuming and expensive part of applying machine learning. We
+ therefore propose a paradigm for the programmatic creation of training 
+sets called data programming in which users express weak supervision 
+strategies or domain heuristics as labeling functions, which are 
+programs that label subsets of the data, but that are noisy and may 
+conflict. We show that by explicitly representing this training set 
+labeling process as a generative model, we can "denoise" the generated 
+training set, and establish theoretically that we can recover the 
+parameters of these generative models in a handful of settings. We then 
+show how to modify a discriminative loss function to make it 
+noise-aware, and demonstrate our method over a range of discriminative 
+models including logistic regression and LSTMs. Experimentally, on the 
+2014 TAC-KBP Slot Filling challenge, we show that data programming would
+ have led to a new winning score, and also show that applying data 
+programming to an LSTM model leads to a TAC-KBP score almost 6 F1 points
+ over a state-of-the-art LSTM baseline (and into second place in the 
+competition). Additionally, in initial user studies we observed that 
+data programming may be an easier way for non-experts to create machine 
+learning models when training data is limited or unavailable.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2017-01-08</td>
+					</tr>
+					<tr>
+					<th>Título corto</th>
+						<td>Data Programming</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/1605.07723">http://arxiv.org/abs/1605.07723</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>22/2/2024 13:50:54</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>arXiv:1605.07723 [cs, stat]</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.48550/arXiv.1605.07723">10.48550/arXiv.1605.07723</a></td>
+					</tr>
+					<tr>
+					<th>Repositorio</th>
+						<td>arXiv</td>
+					</tr>
+					<tr>
+					<th>ID de archivo</th>
+						<td>arXiv:1605.07723</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>22/2/2024 13:50:54</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>22/2/2024 13:50:54</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Etiquetas:</h3>
+				<ul class="tags">
+					<li>Computer Science - Artificial Intelligence</li>
+					<li>Computer Science - Machine Learning</li>
+					<li>Statistics - Machine Learning</li>
+				</ul>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_SKRKAFX9">arXiv Fulltext PDF					</li>
+					<li id="item_BDC7ZS3Y">arXiv.org Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_PVGF47G4" class="item book">
+			<h2>Deep Medicine: How Artificial Intelligence Can Make Healthcare Human Again</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Libro</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Eric J. Topol</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>One of America's top doctors reveals how AI will empower 
+physicians and revolutionize patient care Medicine has become inhuman, 
+to disastrous effect. The doctor-patient relationship--the heart of 
+medicine--is broken: doctors are too distracted and overwhelmed to truly
+ connect with their patients, and medical errors and misdiagnoses 
+abound. In Deep Medicine, leading physician Eric Topol reveals how 
+artificial intelligence can help. AI has the potential to transform 
+everything doctors do, from notetaking and medical scans to diagnosis 
+and treatment, greatly cutting down the cost of medicine and reducing 
+human mortality. By freeing physicians from the tasks that interfere 
+with human connection, AI will create space for the real healing that 
+takes place between a doctor who can listen and a patient who needs to 
+be heard.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>Inglés</td>
+					</tr>
+					<tr>
+					<th>Editorial</th>
+						<td>Basic Books</td>
+					</tr>
+					<tr>
+					<th>Edición</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th>Número de páginas</th>
+						<td>378</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>22/2/2024 12:42:34</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>22/2/2024 12:47:29</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_VMSG4I6H" class="item preprint">
+			<h2>DoubleU-Net: A Deep Convolutional Neural Network for Medical Image Segmentation</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Preimpresión</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Debesh Jha</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Michael A. Riegler</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Dag Johansen</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Pål Halvorsen</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Håvard D. Johansen</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>Semantic image segmentation is the process of labeling each 
+pixel of an image with its corresponding class. An encoder-decoder based
+ approach, like U-Net and its variants, is a popular strategy for 
+solving medical image segmentation tasks. To improve the performance of 
+U-Net on various segmentation tasks, we propose a novel architecture 
+called DoubleU-Net, which is a combination of two U-Net architectures 
+stacked on top of each other. The first U-Net uses a pre-trained VGG-19 
+as the encoder, which has already learned features from ImageNet and can
+ be transferred to another task easily. To capture more semantic 
+information efficiently, we added another U-Net at the bottom. We also 
+adopt Atrous Spatial Pyramid Pooling (ASPP) to capture contextual 
+information within the network. We have evaluated DoubleU-Net using four
+ medical segmentation datasets, covering various imaging modalities such
+ as colonoscopy, dermoscopy, and microscopy. Experiments on the MICCAI 
+2015 segmentation challenge, the CVC-ClinicDB, the 2018 Data Science 
+Bowl challenge, and the Lesion boundary segmentation datasets 
+demonstrate that the DoubleU-Net outperforms U-Net and the baseline 
+models. Moreover, DoubleU-Net produces more accurate segmentation masks,
+ especially in the case of the CVC-ClinicDB and MICCAI 2015 segmentation
+ challenge datasets, which have challenging images such as smaller and 
+flat polyps. These results show the improvement over the existing U-Net 
+model. The encouraging results, produced on various medical image 
+segmentation datasets, show that DoubleU-Net can be used as a strong 
+baseline for both medical image segmentation and cross-dataset 
+evaluation testing to measure the generalizability of Deep Learning (DL)
+ models.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2020-06-27</td>
+					</tr>
+					<tr>
+					<th>Título corto</th>
+						<td>DoubleU-Net</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>arXiv.org</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://arxiv.org/abs/2006.04868">http://arxiv.org/abs/2006.04868</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>20/2/2024 16:51:39</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>arXiv:2006.04868 [cs, eess]</td>
+					</tr>
+					<tr>
+					<th>Repositorio</th>
+						<td>arXiv</td>
+					</tr>
+					<tr>
+					<th>ID de archivo</th>
+						<td>arXiv:2006.04868</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>20/2/2024 16:51:39</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>20/2/2024 16:51:39</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Etiquetas:</h3>
+				<ul class="tags">
+					<li>Computer Science - Computer Vision and Pattern Recognition</li>
+					<li>Electrical Engineering and Systems Science - Image and Video Processing</li>
+				</ul>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_YC82S4WE">arXiv.org Snapshot					</li>
+					<li id="item_P52BMAZ6">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_U69NPCP2" class="item journalArticle">
+			<h2>Editorial: Perspectives for natural language processing between AI, linguistics and cognitive science</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Alessandro Lenci</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Sebastian Padó</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2022-11-03</td>
+					</tr>
+					<tr>
+					<th>Título corto</th>
+						<td>Editorial</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>PubMed Central</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9671705/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9671705/</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>20/2/2024 17:32:11</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>PMID: 36406471
+PMCID: PMC9671705</td>
+					</tr>
+					<tr>
+					<th>Volumen</th>
+						<td>5</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>1059998</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>Frontiers in Artificial Intelligence</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.3389/frai.2022.1059998">10.3389/frai.2022.1059998</a></td>
+					</tr>
+					<tr>
+					<th>Abrev. de revista</th>
+						<td>Front Artif Intell</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2624-8212</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>20/2/2024 17:32:11</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>20/2/2024 17:32:13</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_TA3DWJMX">PubMed Central Full Text PDF					</li>
+					<li id="item_A27R3Q3Q">PubMed Central Link					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_7UT5Z3R7" class="item journalArticle">
+			<h2>Educación, Big Data e Inteligencia Artificial: Metodologías mixtas en plataformas digitales</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Beatrice Bonam</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Luiz Piazentin</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>André Dala Possa</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>Digital technology has provided users with new connections 
+that have reset our understanding of social architectures. As a  
+reaction to Artificial Intelligence (AI) and Big Data, the educational 
+field has rearranged its structure to consider human and  non-human 
+stakeholders and their actions on digital platforms. In light of this 
+increasingly complex scenario, this proposal  aims to present 
+definitions and discussions about AI and Big Data from the academic 
+field or published by international  organizations. The study of AI and 
+Big Data goes beyond the search for mere computational power and instead
+ focuses  upon less difficult (yet perhaps more complex) areas of the 
+study social impacts in Education. This research suggests an  analysis 
+of education through 21st century skills and the impact of AI 
+development in the age of platforms, undergoing three  methodological 
+considerations: research, application and evaluation. To accomplish the 
+research, we relied upon systematic  reviews, bibliographic research and
+ quality analyses conducted within case studies to compose a position 
+paper that sheds  light on how AI and Big Data work and on what level 
+they can be applied in the field of education. Our goal is to offer a  
+triangular analysis under a multimodal approach to better understand the
+ interface between education and new technological  prospects, taking 
+into consideration qualitative and quantitative procedures.
+La tecnología digital ha traído características de conexión que 
+restablecen nuestra comprensión de arquitecturas sociales.  Sobre la 
+Inteligencia Artificial (IA) y Big Data, el campo educativo reorganiza 
+su estructura para considerar a los actores  humanos y no humanos y sus 
+acciones en plataformas digitales. En este escenario cada vez más 
+complejo, esta propuesta  tiene como objetivo presentar definiciones y 
+debates sobre IA y Big Data de naturaleza académica o publicados por  
+organizaciones internacionales. El estudio de IA y Big Data puede ir más
+ allá de la búsqueda de poder computacional /  lógico y entrar en áreas 
+menos difíciles (y quizás más complejas) del campo científico para 
+responder a sus impactos sociales  en la educación. Esta investigación 
+sugiere un análisis de la educación a través de las habilidades del 
+siglo XXI y los impactos  del desarrollo de IA en la era de las 
+plataformas, pasando por tres ejes de grupos metodológicos: 
+investigación, aplicación y  evaluación. Para llevar a cabo la 
+investigación, confiamos en revisiones sistemáticas, investigaciones 
+bibliográficas y análisis  de calidad de estudios de casos para componer
+ un documento de posición que arroje luz sobre cómo funcionan la IA y el
+  Big Data y en qué nivel se pueden aplicar en el campo de la educación.
+ Nuestro objetivo es ofrecer un análisis triangular  bajo un enfoque 
+multimodal para comprender mejor la interfaz entre la educación y las 
+nuevas perspectivas tecnológicas.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>spa</td>
+					</tr>
+					<tr>
+					<th>Título corto</th>
+						<td>Educación, Big Data e Inteligencia Artificial</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>dialnet.unirioja.es</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=7555368">https://dialnet.unirioja.es/servlet/articulo?codigo=7555368</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>21/2/2024 21:48:49</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>Publisher: Grupo Comunicar
+Section: Comunicar: Revista Científica de Comunicación y Educación</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>43-52</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>Comunicar: Revista Científica de Comunicación y Educación</td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>65</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1134-3478</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>21/2/2024 21:48:49</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>21/2/2024 21:48:49</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_X8LMBIK2">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_NTTTLRDH" class="item journalArticle">
+			<h2>Funciones de verosimilitud en el entorno del aprendizaje automático</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Víctor Mirasierra Calleja</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>101</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>21/2/2024 21:22:37</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>21/2/2024 21:23:19</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_QEVB2SJE">Calleja - Funciones de verosimilitud en el entorno del apren.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_3FF4FAD9" class="item journalArticle">
+			<h2>FUNDAMENTOS HISTÓRICOS Y FILOSÓFICOS DE LA INTELIGENCIA ARTIFICIAL</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Luis Barrera Arrestegui</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>21/2/2024 21:00:57</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>21/2/2024 21:00:58</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_MUDRP3RV">Arrestegui - FUNDAMENTOS HISTÓRICOS Y FILOSÓFICOS DE LA INTELIG.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_DHZ66N64" class="item journalArticle">
+			<h2>La inteligencia artificial y sus implicaciones en educación</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Armando Alcántara Santuario</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2023-11-18</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>perfileseducativos.unam.mx</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://perfileseducativos.unam.mx/iisue_pe/index.php/perfiles/article/view/61687">https://perfileseducativos.unam.mx/iisue_pe/index.php/perfiles/article/view/61687</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>21/2/2024 21:37:34</td>
+					</tr>
+					<tr>
+					<th>Derechos</th>
+						<td>Derechos de autor 2023 Universidad Nacional Autónoma de México</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>Number: Especial</td>
+					</tr>
+					<tr>
+					<th>Volumen</th>
+						<td>45</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>5-8</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>Perfiles Educativos</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.22201/iisue.24486167e.2023.Especial.61687">10.22201/iisue.24486167e.2023.Especial.61687</a></td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>Especial</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2448-6167</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>21/2/2024 21:37:34</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>21/2/2024 21:37:34</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_B928RDPN">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_IKWJT5BX" class="item journalArticle">
+			<h2>Machine Learning-Assisted Approaches in Modernized Plant Breeding Programs</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Mohsen Yoosefzadeh Najafabadi</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Mohsen Hesami</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Milad Eskandari</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>In the face of a growing global population, plant breeding is 
+being used as a sustainable tool for increasing food security. A wide 
+range of high-throughput omics technologies have been developed and used
+ in plant breeding to accelerate crop improvement and develop new 
+varieties with higher yield performance and greater resilience to 
+climate changes, pests, and diseases. With the use of these new advanced
+ technologies, large amounts of data have been generated on the genetic 
+architecture of plants, which can be exploited for manipulating the key 
+characteristics of plants that are important for crop improvement. 
+Therefore, plant breeders have relied on high-performance computing, 
+bioinformatics tools, and artificial intelligence (AI), such as 
+machine-learning (ML) methods, to efficiently analyze this vast amount 
+of complex data. The use of bigdata coupled with ML in plant breeding 
+has the potential to revolutionize the field and increase food security.
+ In this review, some of the challenges of this method along with some 
+of the opportunities it can create will be discussed. In particular, we 
+provide information about the basis of bigdata, AI, ML, and their 
+related sub-groups. In addition, the bases and functions of some 
+learning algorithms that are commonly used in plant breeding, three 
+common data integration strategies for the better integration of 
+different breeding datasets using appropriate learning algorithms, and 
+future prospects for the application of novel algorithms in plant 
+breeding will be discussed. The use of ML algorithms in plant breeding 
+will equip breeders with efficient and effective tools to accelerate the
+ development of new plant varieties and improve the efficiency of the 
+breeding process, which are important for tackling some of the 
+challenges facing agriculture in the era of climate change.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2023/4</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>www.mdpi.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.mdpi.com/2073-4425/14/4/777">https://www.mdpi.com/2073-4425/14/4/777</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>23/2/2024 9:49:26</td>
+					</tr>
+					<tr>
+					<th>Derechos</th>
+						<td>http://creativecommons.org/licenses/by/3.0/</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>Number: 4
+Publisher: Multidisciplinary Digital Publishing Institute</td>
+					</tr>
+					<tr>
+					<th>Volumen</th>
+						<td>14</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>777</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>Genes</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.3390/genes14040777">10.3390/genes14040777</a></td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>4</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2073-4425</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>23/2/2024 9:49:26</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>23/2/2024 9:49:31</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Etiquetas:</h3>
+				<ul class="tags">
+					<li>artificial intelligence</li>
+					<li>bigdata</li>
+					<li>complex traits</li>
+					<li>data-integration strategies</li>
+					<li>deep learning</li>
+					<li>ensemble learning</li>
+					<li>random forest</li>
+				</ul>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_F46PVMB5">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_8DYPKKYW" class="item journalArticle">
+			<h2>Predicting the Future — Big Data, Machine Learning, and Clinical Medicine</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ziad Obermeyer</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ezekiel J. Emanuel</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2016-9-29</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>PubMed Central</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070532/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070532/</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>20/2/2024 14:41:39</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>PMID: 27682033
+PMCID: PMC5070532</td>
+					</tr>
+					<tr>
+					<th>Volumen</th>
+						<td>375</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>1216-1219</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>The New England journal of medicine</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1056/NEJMp1606181">10.1056/NEJMp1606181</a></td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>13</td>
+					</tr>
+					<tr>
+					<th>Abrev. de revista</th>
+						<td>N Engl J Med</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>0028-4793</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>20/2/2024 14:41:39</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>20/2/2024 14:41:39</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_EHUX7CEN">PubMed Central Full Text PDF					</li>
+					<li id="item_XRN9NTKZ">PubMed Central Link					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_52UAFNGG" class="item journalArticle">
+			<h2>Psychedelics and Artificial Intelligence: Integrating AI-Powered Analysis in Phenomenological Mental Health Studies</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Diego Gonzalez-Rodriguez</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Marta Perez-Carmona</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>This research aims to unravel the intricate dynamics between 
+psychedelic experiences and mental health by synergizing advanced 
+artificial intelligence (AI) technologies with phenomenological 
+methodologies. We have crafted an approach that leverages AI to 
+scrutinize the narratives of those who have embarked on psychedelic 
+journeys, aiming to shed light on the potential implications of specific
+ experienced phenomena on mental wellness. A significant hurdle in our 
+investigation is the inherent intricacy of delving into textual 
+phenomenological accounts of these psychedelic experiences, marked by 
+their profound subjectivity. To address this, we introduce a 
+groundbreaking methodology that melds Phenomenology with Artificial 
+Intelligence, Data Science, and Natural Language Analysis. This approach
+ harnesses both quantitative and qualitative frameworks to understand 
+and dissect vast amounts of phenomenological data and textual accounts 
+related to Non-Ordinary States of Consciousness.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2023-08-28</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>en-us</td>
+					</tr>
+					<tr>
+					<th>Título corto</th>
+						<td>Psychedelics and Artificial Intelligence</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>osf.io</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://osf.io/9rnj8">https://osf.io/9rnj8</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>20/2/2024 17:14:19</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>Publisher: OSF</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.31234/osf.io/9rnj8">10.31234/osf.io/9rnj8</a></td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>20/2/2024 17:14:19</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>20/2/2024 17:45:11</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_F5Q5WP67">Snapshot					</li>
+					<li id="item_QYBLUFGC">Versión enviada					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_NJ8HCRSS" class="item journalArticle">
+			<h2>Redefining Radiology: A Review of Artificial Intelligence Integration in Medical Imaging</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Reabal Najjar</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>This comprehensive review unfolds a detailed narrative of 
+Artificial Intelligence (AI) making its foray into radiology, a move 
+that is catalysing transformational shifts in the healthcare landscape. 
+It traces the evolution of radiology, from the initial discovery of 
+X-rays to the application of machine learning and deep learning in 
+modern medical image analysis. The primary focus of this review is to 
+shed light on AI applications in radiology, elucidating their seminal 
+roles in image segmentation, computer-aided diagnosis, predictive 
+analytics, and workflow optimisation. A spotlight is cast on the 
+profound impact of AI on diagnostic processes, personalised medicine, 
+and clinical workflows, with empirical evidence derived from a series of
+ case studies across multiple medical disciplines. However, the 
+integration of AI in radiology is not devoid of challenges. The review 
+ventures into the labyrinth of obstacles that are inherent to AI-driven 
+radiology—data quality, the ’black box’ enigma, infrastructural and 
+technical complexities, as well as ethical implications. Peering into 
+the future, the review contends that the road ahead for AI in radiology 
+is paved with promising opportunities. It advocates for continuous 
+research, embracing avant-garde imaging technologies, and fostering 
+robust collaborations between radiologists and AI developers. The 
+conclusion underlines the role of AI as a catalyst for change in 
+radiology, a stance that is firmly rooted in sustained innovation, 
+dynamic partnerships, and a steadfast commitment to ethical 
+responsibility.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2023/1</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Título corto</th>
+						<td>Redefining Radiology</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>www.mdpi.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.mdpi.com/2075-4418/13/17/2760">https://www.mdpi.com/2075-4418/13/17/2760</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>23/2/2024 10:18:11</td>
+					</tr>
+					<tr>
+					<th>Derechos</th>
+						<td>http://creativecommons.org/licenses/by/3.0/</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>Number: 17
+Publisher: Multidisciplinary Digital Publishing Institute</td>
+					</tr>
+					<tr>
+					<th>Volumen</th>
+						<td>13</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>2760</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>Diagnostics</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.3390/diagnostics13172760">10.3390/diagnostics13172760</a></td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>17</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2075-4418</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>23/2/2024 10:18:11</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>23/2/2024 10:18:11</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Etiquetas:</h3>
+				<ul class="tags">
+					<li>artificial intelligence</li>
+					<li>deep learning</li>
+					<li>machine learning</li>
+					<li>computer-aided diagnosis</li>
+					<li>convolutional neural networks</li>
+					<li>medical imaging</li>
+					<li>radiology</li>
+					<li>radiomics</li>
+				</ul>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_P9YBJB4W">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_827AJ6SB" class="item journalArticle">
+			<h2>Redes Neuronales: Conceptos Básicos y Aplicaciones.</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Carlos Alberto Ruiz</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Marta Susana Basualdo</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Damián Jorge Matich</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2001</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>es</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.frro.utn.edu.ar/repositorio/catedras/quimica/5_anio/orientadora1/monograias/matich-redesneuronales.pdf">https://www.frro.utn.edu.ar/repositorio/catedras/quimica/5_anio/orientadora1/monograias/matich-redesneuronales.pdf</a></td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>21/2/2024 20:52:41</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>21/2/2024 20:53:11</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_TLUSPIZU">Ruiz et al. - Redes Neuronales Conceptos Básicos y Aplicaciones.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_4INUN5RC" class="item journalArticle">
+			<h2>The optimistic future of Artificial Intelligence in higher education</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Miguel Ángel Escotet</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>Artificial Intelligence is a fast-evolving technology with 
+enormous potential for education, higher education, and learning. AI can
+ also negatively impact how societies and their citizens engage 
+ethically with these generated, still-unexplored tools. These 
+technological breakthroughs present both opportunity and potential 
+peril. The problem of any new technological advancement depends not upon
+ the technology itself but its practitioners. The article takes the 
+optimistic side for the future of higher education. While being cautious
+ about engaging with these technology applications, it presents an 
+overview of generated AI (GenAI) for higher education such as ChatGPT, 
+MidJourney or Codex, and “AI-driven learning”. AI technologies like 
+Natural Language Processing (NLP), automated performance enhancement 
+(APE), intelligent tutoring systems (ITSs), personalized learning 
+systems (PLS), VR and AR, sentiment analysis, and many more can apply to
+ different areas of teaching, learning, research, and service to 
+society. Some AI immediate applications include student support, 
+tutoring personalization, automated qualitative and quantitative grading
+ and assessment, education data analytics, course programs, content 
+development and educational planning, administration, and academic 
+performance.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2023-07-03</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>Springer Link</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://doi.org/10.1007/s11125-023-09642-z">https://doi.org/10.1007/s11125-023-09642-z</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>23/2/2024 9:30:57</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>PROSPECTS</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1007/s11125-023-09642-z">10.1007/s11125-023-09642-z</a></td>
+					</tr>
+					<tr>
+					<th>Abrev. de revista</th>
+						<td>Prospects</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1573-9090</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>23/2/2024 9:30:57</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>23/2/2024 9:31:02</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Etiquetas:</h3>
+				<ul class="tags">
+					<li>AI</li>
+					<li>Aprendiendo</li>
+					<li>Educación más alta</li>
+					<li>Futuro</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>

@@ -1,0 +1,331 @@
+---
+title: 'Test de Independencia de Chi cuadrado usando R' 
+author: "Luis Alberto Méndez Gasca" 
+date: "2021-07-22"
+categories:   
+     - Estadística
+     - Data Visualization
+tags:   
+     - Pruebas estadísticas
+     - Chi cuadrado
+output: html_document
+banner: "banners/p2.png"
+editor_options: 
+  chunk_output_type: console
+---
+
+La **prueba de chi cuadrado** es una prueba estadística sencilla que puede ser usada cuando se tienen datos de recuento de ocurrencias de categorías. El análisis puede ser definido como una:
+
+-   **Prueba de diferencia de conteos:** para identificar si los conteos observados en las categorías de una variable son estadísticamente diferentes entre sí.
+
+-   **Prueba de diferencia de conteos con probabilidades específicas:** identifica si los conteos observados en las categorías de una variable son estadísticamente diferentes entre sí dado que cada evento tiene una probabilidad de ocurrencia definida. Se debe especificar las probabilidades como un vector en el argumento `p` de la función. No profundizamos en este enfoque aquí
+
+-   **Prueba de independencia de dos factores:** identifica a nivel estadístico si las categorías de dos variables están asociadas o son independientes.
+
+En R, la función nativa básica para el cálculo de esta prueba es:
+
+```{r, eval=F}
+# Debemos tener en cuenta que la prueba tiene 
+# la corrección de Yates activa por defecto. 
+# Debemos modificar el argumento correct si 
+# deseamos activarla o desactivarla.
+chisq.test(x, correct = TRUE)
+```
+
+<br>
+
+<br>
+
+
+### **Librarías de Trabajo**
+
+El siguiente código sirve para instalar las librerías a usar:
+
+```{r, eval=FALSE}
+install.packages("tidyverse")
+install.packages("corrplot")
+install.packages("vcd")
+install.packages("DescTools")
+install.packages("CGPfunctions")
+```
+
+Ahora, activa las librerías:
+
+```{r, warning=F, message=F}
+library(tidyverse)
+library(corrplot)
+library(vcd)
+library(DescTools)
+library(CGPfunctions)
+```
+
+## **Tablas de ejemplo**
+
+Trabajaremos con dos tipos de tablas para realizar los ejemplos:
+
+-   Tabla de contingencia de dos factores.
+
+```{r}
+# Tabla de contingencia de dos factores. 
+# Nivel (de 0 al 3) vs Grado (de 1 al 5).
+url1 <- "https://raw.githubusercontent.com/irwingss/ArchivosCuestionarios/main/Matriz%20Grados.csv"
+grados <- read.csv(url1)
+
+# Visualizar
+print(grados)
+
+# Asegúrate de que la tabla de contingencia está en el formato correcto
+grados <- as.matrix(grados)
+print(dim(grados))
+print(any(is.na(grados)))
+
+# Verificar que la matriz tiene sólo valores numéricos
+print(is.numeric(grados))
+
+# Visualizar la matriz
+print(grados)
+```
+
+-   Tabla larga con los valores de ocurrencia de las categorías.
+
+```{r}
+# Tabla larga con los valores de ocurrencia de las categorías
+url2 <- "https://raw.githubusercontent.com/irwingss/ArchivosCuestionarios/main/tabla_larga_chi_cuadrado.csv"
+dataMejora <- read.csv(url2)
+
+# Visualizar primeras 20 filas
+head(dataMejora, 20)
+```
+
+-   Como dato adicional, si deseas transformar una matriz de contingencia a tabla larga (e.g., convirtamos `grados` en tabla larga), puedes usar el siguiente código:
+
+```{r}
+# Si deseas reutilizar este código, solo cambia las etiquetas: 
+# grados y categoría por el nombre de las dos factores de tu interés
+grados %>%
+  as.data.frame() %>% 
+  rownames_to_column() %>%            
+  gather(Grados, valores, -rowname) %>% 
+  rowwise() %>%                       
+  mutate(valores = list(1:valores)) %>%  
+  unnest(valores) %>%                   
+  select(-valores) %>% 
+  rename(Nivel = rowname) -> gradosLarga
+
+# Visualizar el tibble
+View(gradosLarga)
+```
+
+# **Chi cuadrado para conteos**
+
+Se desea evaluar si existe diferencia entre la cantidad (recuento) de las personas inscritas en todos los grados para el primer nivel de la tabla `grados` podemos hacer un test de chi cuadrado sencillo:
+
+```{r}
+# Separar la base de datos de grados
+inscritos <- grados[1, ]
+print(inscritos)
+
+# Realizar la prueba chi cuadrado
+resX2 <- chisq.test(inscritos, correct = F)
+
+# Inspeccionar los valores esperados
+print(resX2$expected)
+
+# Inspeccionar los valores observados
+print(resX2$observed)
+
+# Ver los resultados de la prueba
+print(resX2)
+```
+
+Las hipótesis a contrastar son:
+
+-   H0: no existe diferencia entre los recuentos de las personas inscritos en los grados.
+
+-   Ha: existe diferencia entre los recuentos de las personas inscritos en los grados.
+
+El **p-valor \< 2.2e-16** es menor a el p-valor crítico de 0.05, por lo que **se rechaza H0**, y decimos que existe diferencia entre los recuentos de las personas inscritas en los diferentes grados evaluados.
+
+# **Chi cuadrado de independencia de dos factores**
+
+Es el uso más típico de la prueba es el contrastar si los niveles de dos factores, es decir, de dos variables categóricas, son independientes o existe evidencia estadística de asociación entre ellas.
+
+Las hipótesis a contrastar son:
+
+-   H0: las variables son independientes.
+
+-   Ha: las variables son dependientes.
+
+Veamos si existen diferencias entre los factores en los dos ejemplos cargados
+
+```{r}
+# Para matrices de contingencia (niveles vs grados)
+chisq_res <- chisq.test(grados, correct = FALSE)
+print(chisq_res)
+
+# Verificación adicional para la estructura de la tabla grados
+print(dim(grados))
+print(class(grados))
+```
+
+El **p-valor \< 2.2e-16** es menor a el p-valor crítico de 0.05, por lo que **se rechaza H0**, y decimos que existe dependencia entre las variables niveles y grados.
+
+```{r}
+# Para tablas largas sin transformar 
+# (treatment vs improvement)
+chisq_res2 <- with(dataMejora, chisq.test(treatment, improvement, correct = FALSE))
+print(chisq_res2)
+
+# Para tablas largas convertidas a matrices de 
+# contingencia (treatment vs improvement)
+matrizDesdeTablaLarga <- table(dataMejora) 
+chisq_res3 <- chisq.test(matrizDesdeTablaLarga, correct = FALSE)
+print(chisq_res3)
+```
+
+El **p-valor \< 0.01841** es menor a el p-valor crítico de 0.05, por lo que **se rechaza H0**, y decimos que la mejora (improvement) y el tratamiento (treatment) son dependientes.
+
+## **Corrección de Yates**
+
+Es buena práctica realizar la prueba de Chi cuadrado sin corrección, observar los valores esperados y detectar si alguno de ellos es menor a 5. Si eso ocurre, se debe aplicar la corrección de Yates para corregir el cálculo del p-valor.
+
+```{r}
+# Para ver los valores esperados se tiene que
+#  guardar la prueba como un objeto en el ambiente
+resGrados <- chisq.test(grados, correct = FALSE)
+resMejora <- with(dataMejora, chisq.test(treatment, improvement, correct = FALSE))
+
+# Luego, se inspecciona el objeto con $expected
+print(resGrados$expected)
+print(resMejora$expected)
+
+# Incluso convertir esto a una prueba lógica
+# TRUE significa que el valor es mayor de 5
+print(resGrados$expected > 5)
+print(resMejora$expected > 5)
+```
+
+En ambos casos presentados no es necesario realizar la corrección de Yates.
+
+## **Categorías que más contribuyen al score de la prueba**
+
+Se puede conocer cuál es el aporte al score de Chi Cuadrado de cada categoría en las dos variables contrastadas visualizando los **residuales** (diferencia entre el valor esperado y el observado) en cada casilla.
+
+```{r}
+# Resultados textuales
+print(round(resGrados$residuals, 3))
+
+# Gráfico visual de los residuales
+corrplot(resGrados$residuals, is.cor = FALSE, 
+         method = "color", addgrid.col=F,
+         tl.col = "black")
+
+```
+
+## **Gráficos de Mosaico**
+
+```{r}
+# Gráfico de mosaico simple
+vcd::mosaic(~ Nivel, data=gradosLarga)
+vcd::mosaic(~ Grados, data=gradosLarga)
+
+# Gráfico de mosaico para ambas variables
+vcd::mosaic(Grados~ Nivel, data=gradosLarga)
+vcd::doubledecker(Grados~Nivel, data=gradosLarga)
+
+# Gráfico de mosaico para ambas variables sombreado por su nivel de aporte
+vcd::mosaic(~ Nivel  + Grados,
+            direction = c("v", "h"),
+            data = gradosLarga,
+            shade = TRUE, 
+            spacing = vcd::spacing_equal(sp = unit(0.3, "lines")))
+```
+
+## **Nivel de asociación**
+
+Una vez que determinamos que existe dependencia entre las dos variables es posible que queramos conocer el nivel de dicha dependencia o asociación. Para este fin recurriremos a el `coeficiente de contingencia` o a índices como la `V de Cramer`. En particular, se recomienda el uso del coeficiente de contingencia para tablas más grandes que 5x5, mientras que para tablas pequeñas la V de Cramer es el indicador de asociación más popular. En R hay varias funciones que entregan estos resultados, aquí revisaremos dos de ellas.
+
+```{r}
+# Leer la tabla
+url1 <- "https://raw.githubusercontent.com/irwingss/ArchivosCuestionarios/main/Matriz%20Grados.csv"
+grados <- read.csv(url1)
+
+# Convertir a matriz numérica
+grados <- as.matrix(grados)
+
+# Verificar si la matriz contiene valores no numéricos
+if (!all(apply(grados, 2, is.numeric))) {
+  stop("La matriz grados contiene valores no numéricos.")
+}
+
+# Verificar que no haya filas o columnas con todos los valores iguales a cero
+if (any(rowSums(grados) == 0) | any(colSums(grados) == 0)) {
+  stop("La matriz grados contiene filas o columnas con todos los valores iguales a cero.")
+}
+
+# Para matrices de contingencia
+print(vcd::assocstats(grados))
+
+# Manejar el caso donde DescTools::Assocs pueda fallar
+tryCatch({
+  print(DescTools::Assocs(grados))
+}, error = function(e) {
+  message("Error en DescTools::Assocs: ", e$message)
+})
+
+# Verificación adicional para la función DescTools::Assocs
+tryCatch({
+  print(DescTools::Assocs(grados))
+}, error = function(e) {
+  message("Error en DescTools::Assocs: ", e$message)
+})
+
+# Para tablas largas, convertir a matriz de contingencia con la función table()
+print(vcd::assocstats(table(dataMejora)))
+
+# Manejar el caso donde DescTools::Assocs pueda fallar para dataMejora
+tryCatch({
+  print(DescTools::Assocs(table(dataMejora)))
+}, error = function(e) {
+  message("Error en DescTools::Assocs con dataMejora: ", e$message)
+})
+```
+
+Dado el tamaño de las matrices de contingencia, tomaremos como valor de interés a la V de Cramer. El valor va de 0, asociación nula, a 1, máxima dependencia. Para el estudio de niveles vs grados, se obtiene `v = 0.25`, por lo que podemos concluir que la asociación entre las variables es baja. Lo mismo ocurre para el estudio de la asociación entre el tratamiento (treatment) y la mejora (improvement) con `v = 0.23`.
+
+## **Gráficos de recuentos**
+
+La librería `CGPfunctions` provee una forma muy sencilla de graficar los conteos usando una tabla larga de datos con ambas variables categóricas en ella.
+
+```{r}
+# Gráfico para el estudio de Grados vs Nivel
+CGPfunctions::PlotXTabs(gradosLarga, Grados, Nivel)
+CGPfunctions::PlotXTabs(gradosLarga, Nivel, Grados)
+
+# Gráfico para el estudio de treatment vs improvement
+CGPfunctions::PlotXTabs(dataMejora, treatment, improvement)
+```
+
+Puedes cambiar el argumento `plottype =` para cambiar rápidamente la forma del gráfico:
+
+```{r}
+# Barras apiladas
+CGPfunctions::PlotXTabs(gradosLarga, Grados, Nivel, plottype="stack")
+
+# Barras porcentuales
+CGPfunctions::PlotXTabs(gradosLarga, Grados, Nivel, plottype="percent")
+```
+
+<br>
+
+
+```
+
+### Puntos clave revisados:
+
+1. **Verificación de la estructura de la tabla `grados`:** Se añadió un paso para convertir `grados` en una matriz y verificar sus dimensiones y si contiene valores faltantes.
+2. **Verificación de los valores en `grados`:** Se verifica si la matriz `grados` contiene solo valores numéricos.
+3. **Uso de `try` para manejar errores:** Se añadió `try` para envolver la función `DescTools::Assocs` y capturar errores, proporcionando información adicional sobre posibles problemas.
+
+Con estas verificaciones adicionales, deberías poder identificar el problema con la estructura de la tabla de contingencia y resolver el error.
+

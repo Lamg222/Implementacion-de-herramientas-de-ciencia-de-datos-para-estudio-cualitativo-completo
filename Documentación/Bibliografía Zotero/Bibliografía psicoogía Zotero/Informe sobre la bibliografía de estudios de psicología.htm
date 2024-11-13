@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="script-src 'none'; media-src 'none'">
+		<title>Informe de Zotero</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9CgpkaXYgdGFibGUgewoJYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKZGl2IHRhYmxlIHRkLCBkaXYgdGFibGUgdGggewoJYm9yZGVyOiAxcHggI2NjYyBzb2xpZDsKCWJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cgl3b3JkLWJyZWFrOiBicmVhay1hbGw7Cn0KCmRpdiB0YWJsZSB0ZCBwOmVtcHR5OjphZnRlciwgZGl2IHRhYmxlIHRoIHA6ZW1wdHk6OmFmdGVyIHsKCWNvbnRlbnQ6ICJcMDBhMCI7Cn0KCmRpdiB0YWJsZSB0ZCAqOmZpcnN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpmaXJzdC1jaGlsZCB7CgltYXJnaW4tdG9wOiAwOwp9CgpkaXYgdGFibGUgdGQgKjpsYXN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpsYXN0LWNoaWxkIHsKCW1hcmdpbi1ib3R0b206IDA7Cn0K">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_WVSPRZFB" class="item journalArticle">
+			<h2>Double-blind comparison of the two hallucinogens psilocybin and dextromethorphan: effects on cognition</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Frederick S. Barrett</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Theresa M. Carbonaro</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Ethan Hurwitz</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Matthew W. Johnson</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Roland R. Griffiths</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>OBJECTIVES: Classic psychedelics (serotonin 2A receptor 
+agonists) and dissociative hallucinogens (NMDA receptor antagonists), 
+though differing in pharmacology, may share neuropsychological effects. 
+These drugs, however, have undergone limited direct comparison. This 
+report presents data from a double-blind, placebo-controlled 
+within-subjects study comparing the neuropsychological effects of 
+multiple doses of the classic psychedelic psilocybin with the effects of
+ a single high dose of the dissociative hallucinogen dextromethorphan 
+(DXM).
+METHODS: Twenty hallucinogen users (11 females) completed neurocognitive
+ assessments during five blinded drug administration sessions (10, 20, 
+and 30 mg/70 kg psilocybin; 400 mg/70 kg DXM; and placebo) in which 
+participants and study staff were informed that a large range of 
+possible drug conditions may have been administered.
+RESULTS: Global cognitive impairment, assessed using the Mini-Mental 
+State Examination during peak drug effects, was not observed with 
+psilocybin or DXM. Orderly and dose-dependent effects of psilocybin were
+ observed on psychomotor performance, working memory, episodic memory, 
+associative learning, and visual perception. Effects of DXM on 
+psychomotor performance, visual perception, and associative learning 
+were in the range of effects of a moderate to high dose (20 to 30 mg/70 
+kg) of psilocybin.
+CONCLUSIONS: This was the first study of the dose effects of psilocybin 
+on a large battery of neurocognitive assessments. Evidence of delirium 
+or global cognitive impairment was not observed with either psilocybin 
+or DXM. Psilocybin had greater effects than DXM on working memory. DXM 
+had greater effects than all psilocybin doses on balance, episodic 
+memory, response inhibition, and executive control.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2018-10</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Título corto</th>
+						<td>Double-blind comparison of the two hallucinogens psilocybin and dextromethorphan</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>PubMed</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>PMID: 30062577
+PMCID: PMC6162157</td>
+					</tr>
+					<tr>
+					<th>Volumen</th>
+						<td>235</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>2915-2927</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>Psychopharmacology</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1007/s00213-018-4981-x">10.1007/s00213-018-4981-x</a></td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>10</td>
+					</tr>
+					<tr>
+					<th>Abrev. de revista</th>
+						<td>Psychopharmacology (Berl)</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1432-2072</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>22/2/2024 14:06:06</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>22/2/2024 14:06:06</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Etiquetas:</h3>
+				<ul class="tags">
+					<li>Hallucinogens</li>
+					<li>Humans</li>
+					<li>Adult</li>
+					<li>Association Learning</li>
+					<li>Cognition</li>
+					<li>Dextromethorphan</li>
+					<li>Dose-Response Relationship, Drug</li>
+					<li>Double-Blind Method</li>
+					<li>Female</li>
+					<li>Hallucinogen</li>
+					<li>Male</li>
+					<li>Memory, Short-Term</li>
+					<li>Psilocybin</li>
+					<li>Psychedelic drug</li>
+					<li>Psychomotor Performance</li>
+					<li>Visual Perception</li>
+					<li>Young Adult</li>
+				</ul>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_8R2ZIZVX">PubMed entry					</li>
+					<li id="item_3NXHTVXJ">Versión aceptada					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_CSMW5GN8" class="item journalArticle">
+			<h2>Efficacy of psychedelic treatments on depressive symptoms: A meta-analysis</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Bruno Romeo</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Laurent Karila</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Catherine Martelli</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Amine Benyamina</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>BACKGROUND: Psychedelic drugs have shown an efficacy in some 
+psychiatric disorders and have an original mechanism of action with a 
+5-HT2A agonism.
+AIM: The aim of this meta-analysis was to assess by a quantitative 
+analysis the putative efficacy of psychedelic drugs on depressive 
+symptoms and to investigate the kinetic of this efficacy.
+METHODS: We searched the MEDLINE and PsycINFO databases through April 
+2019, without limits on year of publication. Means and standard 
+deviations were extracted to calculate standardized mean differences 
+(SMD). Scores of depressive symptoms were compared with baseline scores 
+at days 7, 14, and 21; weeks 4-5 and 6-8; and months 3 and 6.
+RESULTS: Eight studies were included in this meta-analysis. A 
+significant decrease of depressive symptoms was found from day 1 (n = 5 
+studies; SMD = ‒1.4, 95% confidence interval (CI): ‒2.33 to ‒0.48, 
+p = 0.003) to 6 months (n = 4 studies; SMD = ‒1.07, 95% CI: ‒1.44 to 
+‒0.7, p &lt; 0.001) after psychedelic sessions. No serious adverse 
+effect was reported in all included studies. A transient increase of the
+ heart rate, blood systolic, and diastolic pressure were found after 
+psychedelics compared with placebo.
+CONCLUSION: This meta-analysis shows that psychedelic treatments were 
+safe and could contribute to a rapid improvement of depressive symptoms.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2020-10</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Título corto</th>
+						<td>Efficacy of psychedelic treatments on depressive symptoms</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>PubMed</td>
+					</tr>
+					<tr>
+					<th>Adicional</th>
+						<td>PMID: 32448048</td>
+					</tr>
+					<tr>
+					<th>Volumen</th>
+						<td>34</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>1079-1085</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>Journal of Psychopharmacology (Oxford, England)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1177/0269881120919957">10.1177/0269881120919957</a></td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>10</td>
+					</tr>
+					<tr>
+					<th>Abrev. de revista</th>
+						<td>J Psychopharmacol</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1461-7285</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>22/2/2024 12:15:16</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>22/2/2024 12:15:20</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Etiquetas:</h3>
+				<ul class="tags">
+					<li>Animals</li>
+					<li>ayahuasca</li>
+					<li>Blood Pressure</li>
+					<li>Depression</li>
+					<li>depressive symptoms</li>
+					<li>Hallucinogens</li>
+					<li>Heart Rate</li>
+					<li>Humans</li>
+					<li>meta-analysis</li>
+					<li>psilocybin</li>
+					<li>Psychedelics</li>
+					<li>Serotonin 5-HT2 Receptor Agonists</li>
+					<li>Time Factors</li>
+					<li>Treatment Outcome</li>
+				</ul>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_35DDQ2U9">PubMed entry					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_MG8CESQ8" class="item journalArticle">
+			<h2>Psychedelic Treatments for Psychiatric Disorders: A Systematic 
+Review and Thematic Synthesis of Patient Experiences in Qualitative 
+Studies</h2>
+				<table>
+					<tbody><tr>
+						<th>Tipo de elemento</th>
+						<td>Artículo de revista académica</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Joost J. Breeksema</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Alistair R. Niemeijer</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Erwin Krediet</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Eric Vermetten</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Robert A. Schoevers</td>
+					</tr>
+					<tr>
+					<th>Resumen</th>
+						<td>Interest in the use of psychedelic substances for the 
+treatment of mental disorders is increasing. Processes that may affect 
+therapeutic change are not yet fully understood. Qualitative research 
+methods are increasingly used to examine patient accounts; however, 
+currently, no systematic review exists that synthesizes these findings 
+in relation to the use of psychedelics for the treatment of mental 
+disorders.</td>
+					</tr>
+					<tr>
+					<th>Fecha</th>
+						<td>2020-09-01</td>
+					</tr>
+					<tr>
+					<th>Idioma</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Título corto</th>
+						<td>Psychedelic Treatments for Psychiatric Disorders</td>
+					</tr>
+					<tr>
+					<th>Catálogo de biblioteca</th>
+						<td>Springer Link</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://doi.org/10.1007/s40263-020-00748-y">https://doi.org/10.1007/s40263-020-00748-y</a></td>
+					</tr>
+					<tr>
+					<th>Accedido</th>
+						<td>22/2/2024 12:25:26</td>
+					</tr>
+					<tr>
+					<th>Volumen</th>
+						<td>34</td>
+					</tr>
+					<tr>
+					<th>Páginas</th>
+						<td>925-946</td>
+					</tr>
+					<tr>
+					<th>Publicación</th>
+						<td>CNS Drugs</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1007/s40263-020-00748-y">10.1007/s40263-020-00748-y</a></td>
+					</tr>
+					<tr>
+					<th>Número</th>
+						<td>9</td>
+					</tr>
+					<tr>
+					<th>Abrev. de revista</th>
+						<td>CNS Drugs</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1179-1934</td>
+					</tr>
+					<tr>
+					<th>Fecha de adición</th>
+						<td>22/2/2024 12:25:26</td>
+					</tr>
+					<tr>
+					<th>Modificado</th>
+						<td>22/2/2024 12:25:31</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Adjuntos</h3>
+				<ul class="attachments">
+					<li id="item_NSWV2Z9B">Full Text PDF					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>
